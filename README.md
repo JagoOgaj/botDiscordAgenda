@@ -105,8 +105,8 @@ Executez la commande "SOURCE path/to/seed/database.sql" afin de creer les tables
    ```bash
    CREATE DATABASE mon_agenda ;
    USE mon_agenda ;
-   SOURCE path/to/seed/database.sql
-			```
+   SOURCE path/to/seed/database.sql ;
+   ```
 Assurez vous que la connexion est etablie a l'aide des logs sur le terminal, que le nom plus le mot de passe de l'utilisateur de la base 
 de donnees soit correctement renseigner dans le ".env" ainsi que le nom de la base de donnee.
 
