@@ -20,7 +20,7 @@ class BotAgenda(commands.Bot):
     
     async def on_ready(self : botType) -> None:
         logger.info(Static.BOT_START.value)
-        game = discord.Streaming(name="Rien", url="https://www.youtube.com/watch?v=E9fxFF9rbeM")
+        game = discord.Streaming(name="Timeless", url="https://www.youtube.com/watch?v=E9fxFF9rbeM")
         await self.change_presence(status=discord.Status.idle, activity=game)
     
     async def on_command_error(self : botType, ctx: commands.Context, error: Exception) -> None :
