@@ -29,7 +29,7 @@ class AgendaCog(commands.Cog):
                     key = key_value[0].strip()
                     value = (
                         key_value[1].strip().strip('"')
-                    )  # Remove surrounding quotes if present
+                    )  
                     params_dict[key] = value
 
             matiere = params_dict.get("matiere")
