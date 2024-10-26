@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet est un bot Discord utilisant `discord.py` pour la gestion des commandes et `selenium` pour l'automatisation de tâches sur le web.
+Ce projet est un bot Discord utilisant `discord.py` pour la gestion des commandes et `mysql-connector` pour la connexion avec une base de donnee mysql
 
 ## Fonctionnalités
 ### 1. Ajouter un devoir
