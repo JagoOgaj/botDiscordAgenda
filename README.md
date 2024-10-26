@@ -26,10 +26,10 @@ Cette commande permet de créer un devoir.
 Met à jour les informations d’un devoir.
 
 **Paramètres :**
-	•	id (obligatoire) : L’ID du devoir à mettre à jour.
-	•	matiere (optionnel) : La nouvelle matière du devoir.
-	•	libelle (optionnel) : Le nouveau libellé du devoir.
-	•	date (optionnel) : La nouvelle date d’échéance du devoir au format j/m/y.
+- `id` (obligatoire) : L’ID du devoir à mettre à jour.
+-	`matiere` (optionnel) : La nouvelle matière du devoir.
+- `libelle` (optionnel) : Le nouveau libellé du devoir.
+- 	`date` (optionnel) : La nouvelle date d’échéance du devoir au format j/m/y.
 
 **Exemple :**
 ```plaintext
@@ -52,8 +52,8 @@ Liste tous les devoirs enregistrés en base de données.
 Récupère les devoirs d’une période donnée.
 
 **Paramètres :**
-	•	start (obligatoire) : La date de début au format j/m/y (ex : 27/12/2004).
-	•	end (obligatoire) : La date de fin au format j/m/y (ex : 27/12/2004).
+- `start` (obligatoire) : La date de début au format j/m/y (ex : 27/12/2004).
+- `end` (obligatoire) : La date de fin au format j/m/y (ex : 27/12/2004).
 
 **Exemple :**
 ```plaintext
@@ -65,6 +65,7 @@ Récupère les devoirs d’une période donnée.
 Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 - Python 3.12
 - Un environnement virtuel Python (optionnel mais recommandé)
+- Mysql d'installer 
 
 ## Installation et configuration
 
@@ -98,7 +99,19 @@ Assurez-vous de définir les variables d’environnement nécessaires, en créan
     LOG_LEVEL=
    ```
 
+
+5. **Configurez la base de donnees :**
+Executez la commande "SOURCE path/to/seed/database.sql" afin de creer les tables apres avoir creer la base de donnee
+   ```bash
+   CREATE DATABASE mon_agenda ;
+   USE mon_agenda ;
+   SOURCE path/to/seed/database.sql
+			```
+Assurez vous que la connexion est etablie a l'aide des logs sur le terminal, que le nom plus le mot de passe de l'utilisateur de la base 
+de donnees soit correctement renseigner dans le ".env" ainsi que le nom de la base de donnee.
+
 ## Lancer le programe
 
 Une fois l'instalation et la configuration terminé pour lancer le bot avec un `python main.py`
+
 
