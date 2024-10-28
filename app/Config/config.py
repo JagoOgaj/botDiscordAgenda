@@ -5,8 +5,7 @@ from app.Tools import (
     KeyEnv,
     Static,
 )
-
-load_dotenv()
+load_dotenv(override=True)
 type configType = Config
 
 class Config:

@@ -27,9 +27,7 @@ class AgendaCog(commands.Cog):
                 if "=" in param:
                     key_value = param.split("=", 1)
                     key = key_value[0].strip()
-                    value = (
-                        key_value[1].strip().strip('"')
-                    )  
+                    value = key_value[1].strip().strip('"')
                     params_dict[key] = value
 
             matiere = params_dict.get("matiere")
@@ -111,9 +109,8 @@ class AgendaCog(commands.Cog):
 
             if agenda is None:
                 raise Exception("Aucun agenda trouvé")
-
-            matiere = str(updates_dict.get("matiere"))
-            libelle = str(updates_dict.get("libelle"))
+            matiere = updates_dict.get("matiere")
+            libelle = updates_dict.get("libelle")
             date = updates_dict.get("date")
 
             agenda.update_details(matiere, libelle, date)

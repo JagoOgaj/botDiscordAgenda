@@ -52,14 +52,14 @@ class Agenda:
     def update_details(
         self,
         matiere: str | None = None,
-        libelle: str | None = None,
+        libelleParm: str | None = None,
         date_devoir: str | None = None,
     ):
         try:
             if matiere is not None:
                 self._matiere = matiere
-            if libelle is not None:
-                self._libelle = libelle
+            if libelleParm is not None:
+                self._libelle = libelleParm
             if date_devoir is not None:
                 date_format = "%d/%m/%Y"
                 date_devoir = datetime.strptime(date_devoir, date_format)
