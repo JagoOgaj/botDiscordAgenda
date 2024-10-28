@@ -72,7 +72,7 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 1. **Clonez le dépôt :**
 
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/JagoOgaj/botDiscordAgenda.git
    cd repository
    ```
 
